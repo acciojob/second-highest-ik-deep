@@ -13,24 +13,21 @@
 			let n = arr.length;
 				let heighest = -Infinity;
 			let second = -Infinity;
-			if(n!=1 && !_.isEmpty(arr)){
 			for(let i=1;i<n;i++){
 				if(arr[i]>heighest){
-					second = heighest;
+					second = heighest
 					heighest=arr[i];
 				}else if(arr[i]<heighest && arr[i]>second){
 					second=arr[i];
 				}
 			}
 			return second;
-			}else{
-				return "-Infinity";
-			}
+			
 			
 		}
 
 		function Main() {
-			var n =prompt("Enter the number of elements");
+			var n = prompt("Enter the number of elements");
 			var arr = [];
 			for (var i = 0; i < n; i++) {
 				arr[i] = prompt("Enter element " + (i+1));
